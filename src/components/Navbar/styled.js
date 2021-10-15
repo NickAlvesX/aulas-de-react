@@ -1,6 +1,6 @@
-import React from 'react'
+import styled from 'styled-components'
 
-const containerStyle = {
+export const containerStyle = {
   height: '50px',
   backgroundColor: '#F8F9FA',
   width: '100%',
@@ -9,7 +9,7 @@ const containerStyle = {
   alignItems: 'center'
 }
 
-const numberStyle = {
+export const numberStyle = {
   width: 30,
   height: '25px',
   backgroundColor: '#17A2B8',
@@ -21,13 +21,7 @@ const numberStyle = {
   borderRadius: 10
 }
 
-const Navbar = props => (
-  <div style={containerStyle}>
-    <div style={numberStyle}>
-      {props.itemsAmount}
-    </div>
-    <span>Items</span>
-  </div>
-)
-
-export default Navbar
+export const Link = styled.div`
+  cursor: pointer;
+  margin: 10px;
+`
